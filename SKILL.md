@@ -27,7 +27,7 @@ tags: multi-agent, orchestration, automation, enterprise
 ## 🚀 安装
 
 ```bash
-git clone https://github.com/williamwg2025/openclaw-multi-agent-orchestrator.git multi-agent-orchestrator
+# 技能已安装在：~/.openclaw/workspace/skills/multi-agent-orchestrator
 ```
 
 ---
@@ -50,3 +50,18 @@ python3 multi-agent-orchestrator/scripts/dispatch.py "设计一个登录页面"
 
 **作者：** @williamwg2025  
 **版本：** 1.0.0
+
+---
+
+## 🔒 安全说明
+
+- **本地执行：** 所有脚本在本地运行，不联网
+- **权限范围：** 仅需读取 ~/.openclaw/ 目录
+- **无外部依赖：** 不克隆外部仓库，所有代码已包含
+- **数据安全：** 不上传任何数据到外部服务器
+
+---
+
+**作者：** @williamwg2025  
+**版本：** 1.0.1  
+**许可证：** MIT-0
