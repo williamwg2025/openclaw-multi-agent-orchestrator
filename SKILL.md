@@ -1,11 +1,25 @@
 ---
-name: multi-agent-orchestrator
-displayName: Multi-Agent Orchestrator
+name: openclaw-multi-agent-orchestrator
+displayName: OpenClaw Multi-Agent Orchestrator - 多 Agent 协同
 version: 1.0.0
-description: 多 Agent 协同工具，支持 Agent 注册、任务分发、负载均衡、性能监控。
+description: |
+  OpenClaw 多 Agent 协同工具 - 管理和协调多个 AI Agent。
+  支持 Agent 注册、任务分发、负载均衡、性能监控、Agent 间通信。
+  适用于复杂任务分解、多角色协作、企业级应用。
+  关键词：openclaw, multi-agent, orchestration, automation, enterprise, collaboration
 license: MIT-0
 acceptLicenseTerms: true
-tags: multi-agent, orchestration, automation, enterprise
+tags:
+  - openclaw
+  - multi-agent
+  - orchestration
+  - automation
+  - enterprise
+  - collaboration
+  - task-dispatch
+  - load-balancing
+  - monitoring
+  - agent-communication
 ---
 
 # Multi-Agent Orchestrator - 多 Agent 协同
