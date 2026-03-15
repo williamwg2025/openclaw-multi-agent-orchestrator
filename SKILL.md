@@ -48,16 +48,42 @@ tags:
 
 ## 📖 使用
 
-### 注册 Agent
+### 核心引擎
 
 ```bash
-python3 multi-agent-orchestrator/scripts/register.py --agent ui-designer
+# 查看系统状态
+python3 multi-agent-orchestrator/scripts/orchestrator.py --status
+
+# 列出所有 Agent
+python3 multi-agent-orchestrator/scripts/orchestrator.py --list
+
+# 注册新 Agent
+python3 multi-agent-orchestrator/scripts/orchestrator.py --register my-agent --capabilities coding writing
+
+# 分发任务（自动选择最佳 Agent）
+python3 multi-agent-orchestrator/scripts/orchestrator.py --dispatch "帮我搜索 Python 最佳实践"
+
+# 分发任务（指定 Agent）
+python3 multi-agent-orchestrator/scripts/orchestrator.py --dispatch "帮我写代码" --agent coder-agent
+
+# 标记任务完成
+python3 multi-agent-orchestrator/scripts/orchestrator.py --complete <task-id>
 ```
 
-### 任务分发
+### 示例工作流
 
 ```bash
-python3 multi-agent-orchestrator/scripts/dispatch.py "设计一个登录页面"
+# 1. 查看可用 Agent
+python3 orchestrator.py --list
+
+# 2. 分发搜索任务
+python3 orchestrator.py --dispatch "搜索 OpenClaw 文档"
+
+# 3. 分发写作任务
+python3 orchestrator.py --dispatch "写一份使用指南" --agent writer-agent
+
+# 4. 查看任务状态
+python3 orchestrator.py --status
 ```
 
 ---
